@@ -2,6 +2,10 @@ body {
   font-family: Roboto, sans-serif;
   background-color: #fff;
   color: #2e2f42;
+}
+
+ul,
+a {
   list-style-type: none;
 }
 
