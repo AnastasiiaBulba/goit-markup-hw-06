@@ -50,6 +50,10 @@ a {
   color: #404bbf;
 }
 
+.studio:focus {
+  color: #404bbf;
+}
+
 .header-menu-list-a:active {
   color: #404bbf;
 }
@@ -149,6 +153,7 @@ a {
 .team {
 }
 .section-team {
+  text-transform: capitalize;
   background-color: #ffffff;
   font-weight: 700;
   font-size: 36px;
@@ -180,8 +185,10 @@ a {
 /* ------------PORTFOLIO------------ */
 
 .portfolio {
+  background-color: #f4f4fd;
 }
 .section-portfolio {
+  text-transform: capitalize;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -190,6 +197,7 @@ a {
   color: #2e2f42;
 }
 .section-list {
+  background-color: #ffffff;
 }
 .section-list-part {
 }
