@@ -50,10 +50,6 @@ a {
   color: #404bbf;
 }
 
-.studio:focus {
-  color: #404bbf;
-}
-
 .header-menu-list-a:active {
   color: #404bbf;
 }
@@ -151,18 +147,20 @@ a {
 /* ------------TEAM------------ */
 
 .team {
+  background-color: #f4f4fd;
 }
 .section-team {
   text-transform: capitalize;
   background-color: #ffffff;
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.11111;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
 }
 .section-list {
+  background-color: #ffffff;
 }
 .section-list-part {
 }
