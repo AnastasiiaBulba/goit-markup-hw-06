@@ -74,6 +74,10 @@ a {
   color: #404bbf;
 }
 
+.address-list-contact-a:focus {
+  color: #404bbf;
+}
+
 /* ------------------------ */
 
 /* ------------TITLE------------ */
@@ -163,6 +167,7 @@ a {
   background-color: #ffffff;
 }
 .section-list-part {
+  background-color: #ffffff;
 }
 .section-list-title {
   font-weight: 500;
