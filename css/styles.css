@@ -41,6 +41,7 @@ img {
 /* ------------HEADER------------ */
 
 .header {
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .header-container {
@@ -297,18 +298,24 @@ img {
 .portfolio-section-list {
   background-color: #ffffff;
   display: flex;
-  flex-wrap: wrap;
   gap: 48px 24px;
+  flex-wrap: wrap;
 }
 
 .portfolio-section-list-part {
-  border: 1px solid #e7e9fc;
   width: calc((100% - 72px) / 3);
-  text-align: center;
 }
 
 .portfolio-img {
   margin: 0 auto;
+}
+
+.portfolio-bloc-text {
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+  width: 360px;
+  padding-left: 16px;
 }
 
 .portfolio-section-list-title {
@@ -317,7 +324,7 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  margin-top: 32px;
+  padding-top: 32px;
   margin-bottom: 8px;
 }
 .portfolio-section-list-text {
