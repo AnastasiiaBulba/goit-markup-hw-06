@@ -42,6 +42,8 @@ img {
 
 .header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -75,8 +77,11 @@ img {
 }
 
 .header-menu-list {
-  padding-top: 24px;
-  padding-bottom: 24px;
+}
+
+.current {
+  position: relative;
+  color: #404bbf;
 }
 
 .header-menu-list-a {
@@ -87,6 +92,22 @@ img {
   color: #2e2f42;
   padding-top: 24px;
   padding-bottom: 24px;
+  display: block;
+  display: flex;
+  justify-content: start;
+  align-items: end;
+}
+
+.header-menu-list-a.current::after {
+  position: absolute;
+  content: "";
+  border-radius: 2px;
+  background: #404bbf;
+  left: 0;
+  bottom: -1px;
+  display: block;
+  width: 100%;
+  height: 4px;
 }
 
 .header-menu-list-a:hover {
@@ -134,8 +155,16 @@ img {
 /* ------------TITLE------------ */
 
 .title {
-  background-color: #2e2f42;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero-beckgraund.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
   padding: 188px 0;
+  margin: 0 auto;
+  max-width: 1440px;
 }
 .title-name {
   font-weight: 700;
@@ -283,6 +312,34 @@ img {
   margin: 0 auto;
 }
 
+.team-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.team-list-icon {
+  display: flex;
+  gap: 24px;
+  margin-top: 8px;
+}
+.team-part-icon {
+  width: 40px;
+  height: 40px;
+}
+.team-part-a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+  width: 100%;
+  height: 100%;
+}
+.team-icon-image {
+  fill: #f4f4fd;
+}
+
 /* ------------------------ */
 
 /* ------------PORTFOLIO------------ */
@@ -348,9 +405,16 @@ img {
 
 .footer {
   background-color: #2e2f42;
+  display: flex;
   padding-top: 100px;
   padding-bottom: 100px;
 }
+
+.footer-container {
+  margin-left: 156px;
+  margin-right: 120px;
+}
+
 .footer-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -371,4 +435,43 @@ img {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   max-width: 264px;
+}
+
+.footer-icon {
+  width: 280px;
+  height: 80px;
+}
+.footer-icon-text {
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 16px;
+}
+.footer-list-icon {
+  display: flex;
+  gap: 24px;
+}
+.footer-part-icon {
+  width: 40px;
+  height: 40px;
+}
+.footer-part-a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+  width: 100%;
+  height: 100%;
+}
+
+.footer-part-a:hover {
+  background-color: #31d0aa;
+}
+
+.footer-icon-image {
+  fill: #f4f4fd;
 }
