@@ -620,15 +620,9 @@ img {
   background-color: #404bbf;
 }
 
-.subscribe-btn-wpare {
-  position: relative;
-}
-
 .subscribe-btn-image {
   fill: #ffffff;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  margin-left: 16px;
 }
 
 /* ------------------------ */
