@@ -555,7 +555,8 @@ img {
   width: 453px;
   height: 80px;
   display: flex;
-  gap: 24px;
+  gap: 16px 24px;
+  flex-wrap: wrap;
 }
 
 .text-subscribe {
@@ -564,7 +565,6 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #fff;
-  margin-bottom: 16px;
 }
 
 .label-subscribe {
