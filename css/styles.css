@@ -554,7 +554,7 @@ img {
 .form-subscribe {
   width: 453px;
   height: 80px;
-  display: block;
+  display: flex;
   gap: 24px;
 }
 
