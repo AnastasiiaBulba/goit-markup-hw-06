@@ -639,14 +639,14 @@ img {
   position: fixed;
   top: 0;
   /* тут початок сховати */
-  opacity: 0;
-  pointer-events: none;
+  /* opacity: 0;
+  pointer-events: none; */
 }
 
-.backdrop.is-open {
+/* .backdrop.is-open {
   opacity: 1;
   pointer-events: auto;
-}
+} */
 /* тут кінець схованки */
 
 .modal {
@@ -773,6 +773,7 @@ img {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
+  display: block;
 }
 
 .modal-field-wrap {
@@ -830,16 +831,23 @@ img {
 
 .checkbox-mark {
   display: flex;
+  margin-bottom: 24px;
 }
 
-.checkbox-mark-imp {
-  width: 16px;
+.visually-hidden {
+  /* width: 16px;
   height: 16px;
   border-radius: 2px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
+  border: 1px solid rgba(46, 47, 66, 0.4); */
 }
 
-.checkbox-mark-label {
+.visually-hidden:checked + .checkbox-mark-modal span {
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
+}
+
+.checkbox-mark-modal {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -847,8 +855,21 @@ img {
 }
 
 .checkbox-mark-span {
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+  margin-right: 8px;
 }
 .mark-span-icon {
+  fill: #f4f4fd;
 }
 .checkbox-mark-linc {
   line-height: 1.33;
