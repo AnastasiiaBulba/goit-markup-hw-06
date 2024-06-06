@@ -617,8 +617,16 @@ img {
   background-color: #404bbf;
 }
 
+.subscribe-btn:hover + .subscribe-btn-image {
+  fill: #ffffff;
+}
+
 .subscribe-btn:focus {
   background-color: #404bbf;
+}
+
+.subscribe-btn:focus + .subscribe-btn-image {
+  fill: #ffffff;
 }
 
 .subscribe-btn-image {
