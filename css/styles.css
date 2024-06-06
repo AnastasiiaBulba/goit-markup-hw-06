@@ -826,6 +826,39 @@ img {
   margin-bottom: 16px;
 }
 
+/* ----------CHEKBOX----------- */
+
+.checkbox-mark {
+  display: flex;
+}
+
+.checkbox-mark-imp {
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+}
+
+.checkbox-mark-label {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+
+.checkbox-mark-span {
+}
+.mark-span-icon {
+}
+.checkbox-mark-linc {
+  line-height: 1.33;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #4d5ae5;
+}
+
+/* ---------------------------- */
+
 .modal-btn {
   font-family: Roboto, sans-serif;
   font-weight: 500;
