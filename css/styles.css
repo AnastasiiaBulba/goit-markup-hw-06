@@ -647,14 +647,14 @@ img {
   position: fixed;
   top: 0;
   /* тут початок сховати */
-  /* opacity: 0;
-  pointer-events: none; */
+  opacity: 0;
+  pointer-events: none;
 }
 
-/* .backdrop.is-open {
+.backdrop.is-open {
   opacity: 1;
   pointer-events: auto;
-} */
+}
 /* тут кінець схованки */
 
 .modal {
