@@ -309,14 +309,14 @@ img {
     width: 1158px;
   }
 
-  /* .title {
+  .title {
     padding: 188px 0;
-    background-image: linear-gradient(
+    /* background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/office-desk.jpg);
-  } */
+      url(../images/office-desk.jpg); */
+  }
 
   .title-name {
     font-size: 56px;
