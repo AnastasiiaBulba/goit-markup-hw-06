@@ -309,17 +309,17 @@ img {
     width: 1158px;
   }
 
-  .title {
+  /* .title {
     padding: 188px 0;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/office-desk.jpg);
-  }
+  } */
 
   .title-name {
-    font-size: 76px;
+    font-size: 56px;
     max-width: 496px;
   }
 }
@@ -651,6 +651,8 @@ img {
 .section-list-wrapper {
   position: relative;
   overflow: hidden;
+  width: 288px;
+  height: 280px;
 }
 
 .section-list-text {
@@ -697,23 +699,44 @@ img {
   color: #434455;
 }
 
+@media screen and (min-width: 768px) {
+  .section-list-wrapper {
+    width: 356px;
+    height: 300px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .section-list-wrapper {
+    width: 360px;
+    height: 300px;
+  }
+}
+
 /* ------------------------ */
 
 /* ------------FOOTER------------ */
 
 .footer {
   background-color: #2e2f42;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  /* padding-top: 100px;
+  padding-bottom: 100px; */
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
-.footer-auxiliary {
+/* .footer-auxiliary {
   margin-right: 120px;
-}
+} */
 
 .footer-container {
   display: flex;
   align-items: baseline;
+
+  flex-direction: column;
+  text-align: center;
+
+  align-items: center;
 }
 
 .footer-logo {
@@ -736,11 +759,17 @@ img {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   max-width: 264px;
+
+  text-align: left;
+  margin-bottom: 72px;
 }
 
 .footer-icon {
   width: 280px;
   height: 80px;
+
+  margin-bottom: 72px;
+  text-align: center;
 }
 .footer-icon-text {
   font-family: Roboto, sans-serif;
@@ -750,10 +779,13 @@ img {
   letter-spacing: 0.02em;
   color: #fff;
   margin-bottom: 16px;
+  text-align: center;
 }
 .footer-list-icon {
   display: flex;
   gap: 16px;
+
+  justify-content: center;
 }
 .footer-part-icon {
   width: 40px;
@@ -785,12 +817,16 @@ img {
 /* ------------------------ */
 
 /* ------------SUBSCRIBE------------ */
+
 .form-subscribe {
   /* width: 453px;
   height: 80px; */
   display: flex;
   gap: 24px;
   flex-wrap: wrap;
+
+  flex-direction: column;
+  align-items: center;
 }
 
 .text-subscribe {
@@ -800,6 +836,8 @@ img {
   letter-spacing: 0.02em;
   color: #fff;
   margin-bottom: 16px;
+
+  text-align: center;
 }
 
 .label-subscribe {
@@ -867,6 +905,34 @@ img {
   fill: #ffffff;
   margin-left: 16px;
 }
+
+/* @media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+
+  .container-narrow {
+    width: 552px;
+    align-items: baseline;
+  }
+
+  .footer {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .footer-icon-text {
+    text-align: left;
+  }
+
+  .text-subscribe {
+    text-align: left;
+  }
+
+  .form-subscribe {
+    flex-direction: row;
+  }
+} */
 
 /* ------------------------ */
 
