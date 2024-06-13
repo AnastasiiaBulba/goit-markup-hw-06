@@ -124,6 +124,10 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+  .header-container {
+    align-items: center;
+  }
+
   .header-menu {
     display: flex;
     gap: 40px;
@@ -185,6 +189,8 @@ img {
     display: flex;
     gap: 12px;
     flex-direction: column;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   .address-list-contact-a {
@@ -249,6 +255,13 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 72px 24px 24px 24px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-wrapper-adr-icon {
+  margin-top: auto;
 }
 
 .modal-close-menu {
@@ -340,7 +353,7 @@ img {
   color: #404bbf;
 }
 
-.menu-address {
+.menu-wrapper-adr-icon .menu-address {
   display: block;
 }
 
@@ -348,7 +361,7 @@ img {
   display: flex;
   gap: 24px;
   flex-direction: column;
-  margin-top: 168px;
+  /* margin-top: 168px; */
 }
 
 .menu-address-list-contact-a {
@@ -357,6 +370,11 @@ img {
   letter-spacing: 0.02em;
   color: #434455;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-style: normal;
+}
+
+.menu-tel {
+  color: #4d5ae5;
 }
 
 .menu-address-list-contact-a:hover {
@@ -428,10 +446,12 @@ img {
   /* max-width: 1440px; */
   background-size: cover;
   width: 320px;
-  height: 432px;
+  /* height: 432px; */
 }
 
-@media (min-rezolution: 192dpi) {
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+  (min-rezolution: 2dppx),
+  (min-rezolution: 192dpi) {
   .title {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -496,7 +516,9 @@ img {
     height: 436px;
   }
 
-  @media (min-rezolution: 192dpi) {
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+    (min-rezolution: 2dppx),
+    (min-rezolution: 192dpi) {
     .title {
       background-image: linear-gradient(
           rgba(46, 47, 66, 0.7),
@@ -525,10 +547,12 @@ img {
       ),
       url(../images/office-desk.jpg);
     width: 1440px;
-    height: 600px;
+    /* height: 600px; */
   }
 
-  @media (min-rezolution: 192dpi) {
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+    (min-rezolution: 2dppx),
+    (min-rezolution: 192dpi) {
     .title {
       background-image: linear-gradient(
           rgba(46, 47, 66, 0.7),
@@ -678,6 +702,10 @@ img {
     line-height: 1.2;
   }
 
+  .advantages-section-list-text {
+    font-weight: 400;
+  }
+
   .advantages-icon {
     display: flex;
     align-items: center;
@@ -799,7 +827,7 @@ img {
   }
 
   .container-narrow {
-    width: 552px;
+    width: 584px;
   }
 
   .team-section-list {
@@ -809,6 +837,11 @@ img {
   }
   .team-section-list-part {
     width: calc((100% - 24px) / 2);
+  }
+
+  .team-bloc-text {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -981,6 +1014,7 @@ img {
 
 .footer-auxiliary {
   /* margin-right: 120px; */
+  margin-bottom: 72px;
 }
 
 .footer-container {
@@ -1018,7 +1052,7 @@ img {
   max-width: 264px;
 
   text-align: left;
-  margin-bottom: 72px;
+  /* margin-bottom: 72px; */
 }
 
 .footer-icon {
@@ -1185,8 +1219,20 @@ img {
     padding-bottom: 96px;
   }
 
+  .footer-auxiliary {
+    margin-bottom: 0;
+  }
+
   .footer-logo {
     display: inline-block;
+  }
+
+  .footer-text {
+    margin-bottom: 0;
+  }
+
+  .footer-icon {
+    margin-bottom: 0;
   }
 
   .footer-icon-text {
@@ -1219,6 +1265,7 @@ img {
   .container-footer {
     display: flex;
     flex-direction: row;
+    gap: unset;
   }
 
   .footer-auxiliary {
@@ -1228,6 +1275,10 @@ img {
   .footer-container {
     display: flex;
     align-items: baseline;
+  }
+
+  .footer-icon {
+    margin-right: 80px;
   }
 
   .footer-icon-text {
