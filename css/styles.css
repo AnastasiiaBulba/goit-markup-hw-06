@@ -445,7 +445,7 @@ img {
   margin: 0 auto;
   /* max-width: 1440px; */
   background-size: cover;
-  width: 320px;
+  max-width: 320px;
   /* height: 432px; */
 }
 
@@ -512,8 +512,8 @@ img {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/office-tablet.jpg);
-    width: 768px;
-    height: 436px;
+    max-width: 768px;
+    /* height: 436px; */
   }
 
   @media screen and (-webkit-min-device-pixel-ratio: 2),
@@ -546,7 +546,7 @@ img {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/office-desk.jpg);
-    width: 1440px;
+    max-width: 1440px;
     /* height: 600px; */
   }
 
